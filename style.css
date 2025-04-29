@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+
+body{
+    background-color: #f1f1f1;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30vh;
+}
+
+.header nav{
+    width: 50%;
+}
+.header nav ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    justify-content: space-around;
+}
+.header nav ul a{
+    text-decoration: none;
+    color: #000000;
+}
+.header nav ul a:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+.header-content{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header-content p span{
+    background-color: black;
+    color: white;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+}
+
+.content-section .grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    gap: 2.5%;
+}
+
+
+.left-column,.right-column{
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.content-section .grid-container .item-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    /* grid-row: 1 / 3; */
+    width: 100%;
+    height: 70vh;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.content-section .grid-container .item-img{
+    width: 100%;
+    height: 38vh;
+}
+
+.content-section .grid-container .item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-section .grid-container .item-info {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    gap: 10%
+}
+.content-section .grid-container .item-info-right {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    gap: 10%;
+}
+
+
+.content-section .grid-container .item-info .item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+.content-section .grid-container .item-info .item-text .date-subtitle {
+    color: rgb(127, 126, 126);
+    font-weight: normal;
+}
+
+.content-section .grid-container .item-info-right .item-text-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+}
+
+.content-section .grid-container .item-info .item-btn {
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
+
+.content-section .grid-container .item-info .item-btn button {
+    background-color: white;
+    border: 1px solid gray;
+    width: 18%;
+    height: 100%;
+    font-size: 1.1em;
+}
+
+.content-section .grid-container .item-info .item-btn button:hover {
+    background-color: #f1f1f1;
+
+}
+
+
+.content-section .grid-container .item-info .item-btn .comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13%;
+}
+.content-section .grid-container .item-info .item-btn .comments .comment-count {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 20%;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+
+
+.content-section .grid-container .item-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.content-section .grid-container .item-3{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+
+.title-container {
+    height: 8vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+  }
+
+  .title-section{
+    width: 95%;
+  }
+  .Posts {
+    display: flex;
+    /* border: 5px solid rgb(93, 0, 255); */
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+  }
+  .Posts:hover {
+    background-color: #f1f1f1;
+  }
+  .post-title {
+    /* border: 5px solid rgb(93, 0, 255); */
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .item-3 img {
+    width: 15%;
+    height: 8vh;
+    object-fit: cover;
+  }
+.content-section .grid-container .item-4{
+    /* grid-row: 3 / 5; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 70vh;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content-section .grid-container .item-5{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+
+
+
+.content-section .grid-container .item-5 .tags-section{
+    display: flex;
+    justify-content: space-around;
+}
+.content-section .grid-container .item-5 .tags-section .tags{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.content-section .grid-container .item-5 .tags-section .tags .active{
+    background-color: #000000;
+    color: white;
+
+}
+.content-section .grid-container .item-5 .tags-section .tags p{
+    height: 3vh;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.content-section .grid-container .item-5 .tags-section .tags p:hover{
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+        align-items: end;
+        height: 35vh;
+        color: #f1f1f1;
+        width: 100%;
+}
+
+
+footer .footer-container{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    background-color: #616161;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-content{
+    display: flex;
+    width: 95%;
+    height: 15vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .footer-content .btns button{
+    width: 7%;
+    height: 6vh;
+    background-color: #000000;
+    cursor: pointer;
+    color: white;
+}
+footer .footer-content .btns button:disabled{
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+}
+
+footer .footer-container .footer-content .copyright-text a{
+    color: white;
+}
+footer .footer-container .footer-content .copyright-text a:hover{
+    color: rgb(182, 178, 137);
+}
+
+
+
+/* Login Page */
+
+.login-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.login-section h1{
+text-align: center;
+}
+
+.login-section form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 35%;
+    height: 55%;
+    border-radius: 8px;
+    align-items: center;
+}
+
+
+.login-section form .login-content{
+    display: flex
+    ;
+        flex-direction: column;
+        height: 100%;
+        gap: 3%;
+        justify-content: center;
+        width: 90%;
+}
+
+.row-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.group-input{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.login-section form input{
+    height: 4vh;
+}
+
+.login-content .remember{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.login-section form button{
+    background-color: #000000;
+    color: white;
+    height: 5vh;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.another-way{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.another-way .btn button{
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+/* == Login Page == */
+
+
+/*  Register Page */
+.register-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.register-section h1{
+text-align: center;
+}
+
+.register-section form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 35%;
+    height: 90%;
+    border-radius: 8px;
+    align-items: center;
+}
+
+
+.register-section form .register-content{
+    display: flex
+    ;
+        flex-direction: column;
+        height: 100%;
+        gap: 3%;
+        justify-content: center;
+        width: 90%;
+}
+
+.row-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.group-input{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.register-section form input{
+    height: 4vh;
+}
+
+.register-content .agreement{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-direction: row;
+}
+
+.register-section form button{
+    background-color: #000000;
+    color: white;
+    height: 5vh;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.another-way{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.another-way .btn button{
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* == Register Page == */
+
