@@ -340,7 +340,7 @@ header nav .links .burger {
     .content-section .grid-container{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 4%;
     }
     .content-section .grid-container .item-info .item-btn button {
         width: auto;
