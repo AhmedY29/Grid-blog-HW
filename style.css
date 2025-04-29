@@ -23,13 +23,35 @@ body{
 .header nav{
     width: 50%;
 }
-.header nav ul{
+.header nav .links{
+    position: relative;
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+}
+header nav .links .burger{
+    width: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header nav .burger span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+    width: 100%;
+}
+.header nav .links ul{
     display: flex;
     list-style: none;
     font-weight: bold;
     justify-content: space-around;
+    width: 100%;
 }
-.header nav ul a{
+.header nav .links ul a{
     text-decoration: none;
     color: #000000;
 }
@@ -59,6 +81,7 @@ body{
     width: 90%;
     gap: 2.5%;
 }
+
 
 
 .left-column,.right-column{
@@ -101,7 +124,7 @@ body{
     width: 95%;
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    /* height: 25vh; */
     gap: 10%;
 }
 
@@ -149,13 +172,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 13%;
+    width: auto;
+    gap: 5px;
 }
 .content-section .grid-container .item-info .item-btn .comments .comment-count {
     background-color: black;
     color: white;
     text-align: center;
-    width: 20%;
+    width: 1em;
 }
 
 .rounded{
@@ -195,7 +219,7 @@ body{
     /* border: 5px solid rgb(93, 0, 255); */
     align-items: center;
     justify-content: space-around;
-    height: 10vh;
+    /* height: 10vh; */
   }
   .Posts:hover {
     background-color: #f1f1f1;
@@ -304,6 +328,149 @@ footer .footer-container .footer-content .copyright-text a:hover{
 }
 
 
+header nav .links .burger {
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .content-section .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-section .grid-container .item-info .item-btn button {
+        width: auto;
+    }
+
+    .content-section .grid-container .item-info .item-btn .comments .comment-count {
+        width: 1em;
+    }
+    
+    .content-section .grid-container .item-info-right {
+        height: 30.5vh;
+    }
+
+    .content-section .grid-container .item-5 {
+        height: 40vh;
+    }
+
+    .header{
+        flex-direction: row-reverse;
+    }
+
+
+    .burger{
+        display: block;
+    }
+
+    .header nav .links ul{
+        display: none;
+    }
+
+    .header nav .links {
+        flex-direction: column;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+    header nav .links .burger {
+        display: flex;
+    }
+    .header nav .links:hover ul{
+        background: #a4a4a4;
+        display: block;
+        position: absolute;
+        top: 25px;
+    }
+
+    header nav .links .burger {
+        width: 10%;
+    }
+
+    .header-content {
+        width: 80%;
+    }
+
+    footer{
+        height: 35vh;
+    }
+    footer .footer-container {
+        height: 50%;
+    }
+    
+    footer .footer-content .btns button{
+        width: 25%;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .header{
+        flex-direction: row-reverse;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+    .header nav .links {
+        flex-direction: column;
+    }
+    .header nav .links ul {
+        flex-direction: column;
+    }
+
+    header nav .links .burger {
+        display: flex;
+        width: 15%;
+    }
+
+    .header nav .links:hover ul{
+        background: #a4a4a4;
+        display: block;
+        position: absolute;
+        top: 25px;
+    }
+
+    .header nav .links ul{
+        display: none;
+    }
+    nav .burger:hover nav ul{
+        display: block;
+    }
+
+    .header-content {
+        width: 80%;
+    } 
+
+    .content-section .grid-container .item-info .item-btn button {
+        width: auto;
+    }
+    .content-section .grid-container .item-info-right {
+        height: auto;
+    }
+    .Posts {
+        height: auto;
+    }
+    footer .footer-content .btns button{
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+
+    .content-section .grid-container .item-info .item-btn button {
+        width: auto;
+    }
+}
+
+
+
 
 /* Login Page */
 
@@ -322,7 +489,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 25%;
+    width: 35%;
     height: 60%;
     border-radius: 8px;
     align-items: center;
@@ -383,6 +550,29 @@ text-align: center;
     background-color: white;
     color: #000000;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .login-section form {
+        width: 70%;
+    }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 786px) {
+
+    .login-section form {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width:787px) and (max-width: 992px) {
+
+    .login-section form {
+        width: 60%;
+    }
 }
 
 
@@ -468,6 +658,30 @@ text-align: center;
     color: #000000;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .register-section form {
+        width: 90%;
+    }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 786px) {
+
+    .register-section form {
+        width: 70%;
+        height: 95%;
+    }
+
+}
+
+@media only screen and (min-width:787px) and (max-width: 992px) {
+
+    .register-section form {
+        width: 60%;
+    }
+}
+
 
 /* == Register Page == */
 
