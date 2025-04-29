@@ -410,10 +410,18 @@ header nav .links .burger {
 }
 
 
-@media only screen and (max-width: 992px) {
-
+@media only screen and (max-width: 1024px) {
+    .content-section .grid-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
+    }
     .header{
         flex-direction: row-reverse;
+        justify-content: end;
+    }
+    .header-content{
+        display: none;
     }
 
     .header nav ul{
@@ -449,6 +457,14 @@ header nav .links .burger {
         width: 80%;
     } 
 
+
+    .content-section .grid-container .item-4{
+        height: 80vh;
+    }
+    .content-section .grid-container .item-1{
+        height: 80vh;
+    }
+
     .content-section .grid-container .item-info .item-btn button {
         width: auto;
     }
@@ -456,10 +472,28 @@ header nav .links .burger {
         height: auto;
     }
     .Posts {
-        height: auto;
+        height: 18vh;
     }
+
+    .item-3 img {
+        width: 10%;
+        height: 14vh;
+    }
+
+
     footer .footer-content .btns button{
         width: 25%;
+    }
+    
+    .content-section .grid-container .item-5 {
+        height: 30vh;
+    }
+
+    footer .footer-container {
+        height: 40%;
+    }
+    footer {
+        height: 40vh;
     }
 }
 
@@ -570,11 +604,12 @@ text-align: center;
 
 }
 
-@media only screen and (min-width:787px) and (max-width: 992px) {
+@media only screen and (min-width:787px) and (max-width: 1024px) {
 
     .login-section form {
         width: 60%;
     }
+
 }
 
 
@@ -677,7 +712,7 @@ text-align: center;
 
 }
 
-@media only screen and (min-width:787px) and (max-width: 992px) {
+@media only screen and (min-width:787px) and (max-width: 1024px) {
 
     .register-section form {
         width: 60%;
